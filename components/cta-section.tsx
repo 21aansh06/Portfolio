@@ -22,7 +22,7 @@ export default function CTASection() {
     const formData = new FormData(form)
 
     try {
-      const response = await fetch("https://formspree.io/f/xwpqjkkv", {
+      const response = await fetch("https://formspree.io/f/xvzdgqpp", {
         method: "POST",
         body: formData,
         headers: {
