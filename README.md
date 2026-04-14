@@ -24,7 +24,8 @@ Hi! I’m **Aansh Malhotra**, a passionate full-stack web developer building mod
 ## 🌐 Connect With Me
 
 - GitHub: [@21aansh06](https://github.com/21aansh06)  
-- LinkedIn: [Aansh Malhotra](https://www.linkedin.com/in/aansh-malhotra-a28423320/)  
+- LinkedIn: [Aansh Malhotra](https://www.linkedin.com/in/aansh-malhotra-a28423320/)
+- Portfolio: [Aansh Malhotra | Full Stack Website Developer](https://portfolio-woad-three-26.vercel.app/)
 
 ---
 
