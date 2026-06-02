@@ -33,13 +33,13 @@ export const projects = [
   },
 
   {
-    title: "DigiQ | Smart Digital Queue Management System",
-    description: "A real-time queue management platform that replaces physical waiting lines with QR-based access and dynamic wait-time estimation.",
-    badges: ["React.js", "Node.js", "Express", "MongoDB", "Tailwind"],
+    title: "DigiQ | Real-Time B2B Queue Management SaaS",
+    description: "A real-time queue management platform that eliminates physical waiting lines, live queue tracking, and dynamic wait-time estimation for organizations like hospitals, banks, and clinics.",
+    badges: ["Next.js", "TypeScript", "Node.js", "Express.js", "MongoDB", "Socket.IO", "Tailwind CSS", "Zustand"],
     grant: null,
     links: {
-      github: "https://github.com/21aansh06/DigiQ",
-      live: "https://digi-q-ivory.vercel.app",
+      github: "https://github.com/21aansh06/DigiiQ",
+      live: "https://digi-q-on9h.vercel.app/",
     },
     image: "/Projects_Screenshots/DigiQ/DigiQ.png",
   },
@@ -82,5 +82,5 @@ export const projects = [
     },
     "image": "/Projects_Screenshots/FinanceBackend/FinanceBackend.png"
   },
-  
+
 ]
