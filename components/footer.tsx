@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Github, Linkedin, Twitter } from "lucide-react"
+import { Github, Linkedin, TwitterIcon } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export default function Footer() {
@@ -19,6 +19,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li><Link href="/" className="text-muted-foreground hover:text-foreground transition-colors">Home</Link></li>
               <li><Link href="#projects" className="text-muted-foreground hover:text-foreground transition-colors">Projects</Link></li>
+              <li><Link href="#blogs" className="text-muted-foreground hover:text-foreground transition-colors">Blogs</Link></li>
               <li><Link href="#logs" className="text-muted-foreground hover:text-foreground transition-colors">Build Logs</Link></li>
               <li><Link href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">Contact</Link></li>
             </ul>
@@ -32,10 +33,16 @@ export default function Footer() {
                   <Github className="h-5 w-5" />
                 </Button>
               </a>
-             
+              
               <a href="https://www.linkedin.com/in/aansh-malhotra-a28423320/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-foreground">
                   <Linkedin className="h-5 w-5" />
+                </Button>
+              </a>
+              
+              <a href="https://x.com/axnsh_" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-foreground">
+                  <TwitterIcon className="h-5 w-5" />
                 </Button>
               </a>
             </div>

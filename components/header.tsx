@@ -6,13 +6,14 @@ import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { ModeToggle } from "@/components/mode-toggle"
-import { GithubIcon, LinkedinIcon, Menu, X } from "lucide-react"
+import { GithubIcon, LinkedinIcon, Menu, TwitterIcon } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 
 const navItems = [
   { href: "/", label: "Home" },
   { href: "#projects", label: "Projects" },
   { href: "#tech-stack", label: "Tech Stack" },
+  { href: "#blogs", label: "Blogs" },
   { href: "#build-logs", label: "Build Logs" },
   { href: "#contact", label: "Contact" },
 ]
@@ -89,6 +90,12 @@ export default function Header() {
                 <LinkedinIcon className="h-4 w-4" />
               </Button>
             </a>
+            
+            <a href="https://x.com/axnsh_" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+              <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-foreground">
+                <TwitterIcon className="h-4 w-4" />
+              </Button>
+            </a>
           </div>
           <ModeToggle />
           
@@ -99,7 +106,7 @@ export default function Header() {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? (
-              <X className="h-5 w-5" />
+              <TwitterIcon className="h-5 w-5" />
             ) : (
               <Menu className="h-5 w-5" />
             )}
@@ -142,6 +149,11 @@ export default function Header() {
                 <a href="https://www.linkedin.com/in/aansh-malhotra-a28423320/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                   <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-foreground">
                     <LinkedinIcon className="h-4 w-4" />
+                  </Button>
+                </a>
+                <a href="https://x.com/axnsh_" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                  <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-foreground">
+                    <TwitterIcon className="h-4 w-4" />
                   </Button>
                 </a>
               </div>

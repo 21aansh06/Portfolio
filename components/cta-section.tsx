@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { motion } from "framer-motion"
-import { Github, Linkedin, Mail, MessageSquare, Send, Twitter } from "lucide-react"
+import { Github, Linkedin, Mail, MessageSquare, Send, TwitterIcon} from "lucide-react"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -111,6 +111,21 @@ export default function CTASection() {
                     <div>
                       <h3 className="font-medium">LinkedIn</h3>
                       <p className="text-sm text-muted-foreground">linkedin.com/in/aansh-malhotra</p>
+                    </div>
+                  </a>
+
+                  <a
+                    href="https://x.com/axnsh_"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 p-3 rounded-lg transition-colors hover:bg-accent"
+                  >
+                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                      <TwitterIcon className="h-5 w-5" />
+                    </div>
+                    <div>
+                      <h3 className="font-medium">Twitter</h3>
+                      <p className="text-sm text-muted-foreground">x.com/axnsh_</p>
                     </div>
                   </a>
                 </CardContent>

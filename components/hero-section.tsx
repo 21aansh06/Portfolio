@@ -57,6 +57,11 @@ export default function HeroSection() {
       url: "https://www.linkedin.com/in/aansh-malhotra-a28423320/",
       icon: "linkedin"
     },
+    {
+      name: "X",
+      url: "https://x.com/axnsh_",
+      icon: "twitter"
+    },
   ]
 
   return (
