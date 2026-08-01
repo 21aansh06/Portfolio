@@ -150,7 +150,7 @@ export default function HeroSection() {
           </Button>
           <Button variant="outline" asChild className="hover:scale-105 transition-transform">
             <Link
-              href="/Resume_latest.pdf"
+              href="/Resume_Latest.pdf"
               target="_blank"
               download
             >
