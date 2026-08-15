@@ -20,43 +20,51 @@ type TechItem = {
 }
 
 const techStack: TechItem[] = [
-// Languages
-{ name: "JavaScript (ES6+)", level: "expert", category: "languages" },
-{ name: "TypeScript", level: "expert", category: "languages" },
-{ name: "HTML5", level: "expert", category: "languages" },
-{ name: "CSS3", level: "expert", category: "languages" },
+  // Languages
+  { name: "JavaScript (ES6+)", level: "expert", category: "languages" },
+  { name: "TypeScript", level: "expert", category: "languages" },
+  { name: "HTML5", level: "expert", category: "languages" },
+  { name: "CSS3", level: "expert", category: "languages" },
 
-// Front-End
-{ name: "React.js", level: "expert", category: "frontend" },
-{ name: "Next.js", level: "expert", category: "frontend" },
-{ name: "Tailwind CSS", level: "expert", category: "frontend" },
-{ name: "ShadCN-UI", level: "expert", category: "frontend" },
+  // Front-End
+  { name: "React.js", level: "expert", category: "frontend" },
+  { name: "Next.js", level: "expert", category: "frontend" },
+  { name: "Tailwind CSS", level: "expert", category: "frontend" },
+  { name: "ShadCN-UI", level: "expert", category: "frontend" },
 
-// Back-End
-{ name: "Node.js", level: "expert", category: "backend" },
-{ name: "Express.js", level: "expert", category: "backend" },
-{ name: "REST APIs", level: "expert", category: "backend" },
-{ name: "JWT Authentication", level: "proficient", category: "backend" },
-{ name: "Microservices Architecture", level: "proficient", category: "backend" },
-{ name: "Prisma ORM", level: "proficient", category: "backend" },
+  // Back-End
+  { name: "Node.js", level: "expert", category: "backend" },
+  { name: "Express.js", level: "expert", category: "backend" },
+  { name: "REST APIs", level: "expert", category: "backend" },
+  { name: "Microservices Architecture", level: "proficient", category: "backend" },
+  { name: "Apache Kafka", level: "proficient", category: "backend" },
+  { name: "BullMQ", level: "proficient", category: "backend" },
+  { name: "Prisma ORM", level: "proficient", category: "backend" },
+  { name: "JWT Authentication", level: "proficient", category: "backend" },
 
-// Databases
-{ name: "PostgreSQL", level: "proficient", category: "databases" },
-{ name: "MongoDB", level: "proficient", category: "databases" },
-{ name: "Redis", level: "proficient", category: "databases" },
 
-// AI & APIs
-{ name: "Gemini API", level: "proficient", category: "ai" },
+  // Databases
+  { name: "PostgreSQL", level: "proficient", category: "databases" },
+  { name: "MongoDB", level: "proficient", category: "databases" },
+  { name: "Redis", level: "proficient", category: "databases" },
+  { name: "Qdrant", level: "proficient", category: "databases" },
 
-// DevOps & Tools
-{ name: "Git & GitHub", level: "expert", category: "devops" },
-{ name: "Docker & Docker Compose", level: "proficient", category: "devops" },
-{ name: "Apache Kafka (Async Processing)", level: "proficient", category: "devops" },
-{ name: "Vercel & Render", level: "proficient", category: "devops" },
 
-// Others
-{ name: "Server-Side Rendering (SSR)", level: "proficient", category: "others" },
-{ name: "API Documentation (Swagger)", level: "proficient", category: "others" }
+  // AI & GenAI
+  { name: "RAG (Retrieval-Augmented Generation)", level: "proficient", category: "ai" },
+  { name: "OpenAI API & SDK", level: "proficient", category: "ai" },
+  { name: "Gemini API & SDK", level: "proficient", category: "ai" },
+  { name: "Anthropic API & SDK", level: "proficient", category: "ai" },
+  { name: "AI Agents & Tool Calling", level: "proficient", category: "ai" },
+  { name: "Embeddings & Semantic Search", level: "proficient", category: "ai" },
+
+  // DevOps & Tools
+  { name: "Docker & Docker Compose", level: "proficient", category: "devops" },
+  { name: "Git & GitHub", level: "expert", category: "devops" },
+  { name: "Vercel & Render", level: "proficient", category: "devops" },
+
+  // Others
+  { name: "API Documentation (Swagger)", level: "proficient", category: "others" }
 ]
 
 export default function TechStackSection() {
@@ -87,9 +95,9 @@ export default function TechStackSection() {
         className="mb-10 md:mb-12"
       >
         <h2 className="text-4xl md:text-5xl font-bold mb-4"># Tech Stack</h2>
-<p className="text-muted-foreground max-w-lg md:max-w-2xl mx-auto text-base md:text-lg">
-  Tools, frameworks, and technologies I use to build modern, scalable web applications.
-</p>
+        <p className="text-muted-foreground max-w-lg md:max-w-2xl mx-auto text-base md:text-lg">
+          Tools, frameworks, and technologies I use to build modern, scalable web applications.
+        </p>
 
       </motion.div>
 
@@ -112,12 +120,12 @@ export default function TechStackSection() {
             <TabsTrigger value="frontend" className="flex-shrink-0">Front-End</TabsTrigger>
             <TabsTrigger value="backend" className="flex-shrink-0">Back-End</TabsTrigger>
             <TabsTrigger value="databases" className="flex-shrink-0">Databases</TabsTrigger>
-            <TabsTrigger value="ai" className="flex-shrink-0">AI & APIs</TabsTrigger>
+            <TabsTrigger value="ai" className="flex-shrink-0">GenAI</TabsTrigger>
             <TabsTrigger value="devops" className="flex-shrink-0">DevOps & Tools</TabsTrigger>
             <TabsTrigger value="others" className="flex-shrink-0">Others</TabsTrigger>
           </TabsList>
 
-          {( ["languages","frontend","backend","databases","ai","devops","others"] as TechCategory[] ).map((category) => (
+          {(["languages", "frontend", "backend", "databases", "ai", "devops", "others"] as TechCategory[]).map((category) => (
             <TabsContent key={category} value={category}>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
                 {filterTech(category).sort(sortByLevel).map((tech) => (
@@ -139,10 +147,10 @@ export default function TechStackSection() {
                             tech.level === "expert"
                               ? "100%"
                               : tech.level === "proficient"
-                              ? "75%"
-                              : tech.level === "familiar"
-                              ? "50%"
-                              : "25%",
+                                ? "75%"
+                                : tech.level === "familiar"
+                                  ? "50%"
+                                  : "25%",
                         }}
                         transition={{ duration: 0.6 }}
                         className={`h-2 rounded-full ${levelColors[tech.level]}`}

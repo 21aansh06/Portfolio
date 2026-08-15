@@ -21,15 +21,23 @@ export const projects = [
     image: "/Projects_Screenshots/Chatify/chatify.png",
   },
   {
-    "title": "HireNode | AI-Powered Hiring Platform",
-    "description": "A scalable microservices-based job platform with Kafka-powered asynchronous email processing and AI-driven resume analysis using Gemini.",
-    "badges": ["Next.js", "Node.js", "TypeScript", "PostgreSQL", "Kafka", "Docker", "Redis", "Gemini AI"],
+    "title": "Raseo SDK",
+    "description": "An open-source, provider-agnostic TypeScript SDK for building AI applications and agents with OpenAI, Gemini, and Anthropic, featuring unified model interfaces, tool calling, tool execution, and extensible provider support.",
+    "badges": [
+      "TypeScript",
+      "Node.js",
+      "OpenAI",
+      "Gemini",
+      "Anthropic",
+      "AI Agents",
+      "Tool Calling"
+    ],
     "grant": null,
     "links": {
-      "github": "https://github.com/21aansh06/HireNode-Platform",
-      "live": ""
+      "github": "https://github.com/TeamRaseo/raseo",
+      "live": "https://docs.raseo.dev"
     },
-    "image": "/Projects_Screenshots/HireNode/HireNode.png"
+    "image": "/Projects_Screenshots/Raseo/Raseo.png"
   },
 
   {
@@ -42,6 +50,17 @@ export const projects = [
       live: "https://digi-q-on9h.vercel.app/",
     },
     image: "/Projects_Screenshots/DigiQ/DigiQ.png",
+  },
+  {
+    "title": "HireNode | AI-Powered Hiring Platform",
+    "description": "A scalable microservices-based job platform with Kafka-powered asynchronous email processing and AI-driven resume analysis using Gemini.",
+    "badges": ["Next.js", "Node.js", "TypeScript", "PostgreSQL", "Kafka", "Docker", "Redis", "Gemini AI"],
+    "grant": null,
+    "links": {
+      "github": "https://github.com/21aansh06/HireNode-Platform",
+      "live": ""
+    },
+    "image": "/Projects_Screenshots/HireNode/HireNode.png"
   },
   {
     "title": "Energy Digital | AI-Powered Energy Management System",
