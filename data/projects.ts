@@ -1,34 +1,38 @@
 export const projects = [
+  {
+    "title": "ChatSource | AI Knowledge Assistant",
+    "description": "Upload your PDFs, websites, YouTube videos, or text and chat with your own knowledge. Ask questions, get answers grounded in your sources, and jump directly to the relevant content with citations and timestamps.",
+    "badges": [
+      "Next.js",
+      "TypeScript",
+      "Express.js",
+      "PostgreSQL(Neon)",
+      "Qdrant",
+      "Supabase",
+      "RAG",
+      "BullMQ",
+      "OpenAI",
+      "Gemini",
+      "Redis"
+    ],
+    "grant": null,
+    "links": {
+      "github": "https://github.com/21aansh06/ChatSource",
+      "live": "https://chat-source.vercel.app"
+    },
+    "image": "/Projects_Screenshots/ChatSource/ChatSource.png"
+  },
+
 
   {
-    title: "Chatify | Real Time Scalable Chat Application",
-    description: "Production ready scalable real-time chat app with OTP authentication, instant messaging, reactions, and Redis-based rate limiting.",
-    badges: [
-      "React",
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "Socket.IO",
-      "Redis",
-      "Zustand",
-      "Tailwind",
-    ],
-    grant: null,
-    links: {
-      github: "https://github.com/21aansh06/Chatify",
-      live: "https://chatify-beta-five.vercel.app",
-    },
-    image: "/Projects_Screenshots/Chatify/chatify.png",
-  },
-  {
-    "title": "Raseo SDK",
+    "title": "Raseo SDK | Open-Source AI SDK",
     "description": "An open-source, provider-agnostic TypeScript SDK for building AI applications and agents with OpenAI, Gemini, and Anthropic, featuring unified model interfaces, tool calling, tool execution, and extensible provider support.",
     "badges": [
       "TypeScript",
       "Node.js",
+      "Anthropic",
       "OpenAI",
       "Gemini",
-      "Anthropic",
       "AI Agents",
       "Tool Calling"
     ],
@@ -50,6 +54,26 @@ export const projects = [
       live: "https://digi-q-on9h.vercel.app/",
     },
     image: "/Projects_Screenshots/DigiQ/DigiQ.png",
+  },
+  {
+    title: "Chatify | Real Time Scalable Chat Application",
+    description: "Production ready scalable real-time chat app with OTP authentication, instant messaging, reactions, and Redis-based rate limiting.",
+    badges: [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Socket.IO",
+      "Redis",
+      "Zustand",
+      "Tailwind",
+    ],
+    grant: null,
+    links: {
+      github: "https://github.com/21aansh06/Chatify",
+      live: "https://chatify-beta-five.vercel.app",
+    },
+    image: "/Projects_Screenshots/Chatify/chatify.png",
   },
   {
     "title": "HireNode | AI-Powered Hiring Platform",
