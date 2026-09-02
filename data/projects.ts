@@ -25,7 +25,7 @@ export const projects = [
 
 
   {
-    "title": "Raseo SDK | Open-Source AI SDK",
+    "title": "Raseo SDK | Open-Source Agent SDK",
     "description": "An open-source, provider-agnostic TypeScript SDK for building AI applications and agents with OpenAI, Gemini, and Anthropic, featuring unified model interfaces, tool calling, tool execution, and extensible provider support.",
     "badges": [
       "TypeScript",
@@ -39,7 +39,7 @@ export const projects = [
     "grant": null,
     "links": {
       "github": "https://github.com/TeamRaseo/raseo",
-      "live": "https://docs.raseo.dev"
+      "live": "https://raseo-pearl.vercel.app/"
     },
     "image": "/Projects_Screenshots/Raseo/Raseo.png"
   },
