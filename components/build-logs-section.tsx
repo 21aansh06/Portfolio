@@ -31,7 +31,7 @@ const buildLogs: BuildLog[] = [
       "Currently building a scalable microservices-based hiring platform with Kafka-based email workflows and AI-powered resume analysis using Gemini.",
     project: "HireNode",
     tags: ["Next.js", "Node.js", "Kafka", "PostgreSQL", "Docker", "Gemini AI"],
-    status: "in-progress",
+    status: "completed",
     impact:
       "Building a production-grade hiring ecosystem with async processing and AI-driven insights",
     challenges: [

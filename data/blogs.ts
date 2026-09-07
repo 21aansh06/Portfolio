@@ -1,13 +1,12 @@
 export const blogs = [
-    {
-      title:
-        "Machine Learning Engineer vs Application Engineer: Understanding the Difference Through a Robot",
-      excerpt:
-        "Learn the difference between Machine Learning Engineers and Application Engineers through a practical robot analogy, exploring their responsibilities, skill sets, workflows, and how they collaborate to build intelligent AI-powered products.",
-      date: "2026-06-30",
-      tags: ["Machine Learning", "AI", "Engineering", "Career", "Software Development"],
-      link: "https://axnsh.hashnode.dev/machine-learning-engineer-vs-application-engineer-understanding-the-difference-through-a-robot",
-    },
+  {
+    title: "Why AI Applications Need Background Workflows",
+    excerpt:
+      "Understand why long-running AI tasks don't belong inside web requests and how background workflows enable asynchronous processing, reliable retries, webhooks, and scalable AI agent execution.",
+    date: "2026-09-07",
+    tags: ["AI", "Background Workflows", "AI Agents", "Async Processing", "Webhooks"],
+    link: "https://axnsh.hashnode.dev/why-ai-applications-need-background-workflows",
+  },
   {
     title: "Everything You Should Know About RAG",
     excerpt:
@@ -15,5 +14,14 @@ export const blogs = [
     date: "2026-07-10",
     tags: ["RAG", "LLMs", "AI", "Vector Database", "Embeddings"],
     link: "https://axnsh.hashnode.dev/everything-you-should-know-about-rag",
+  },
+  {
+    title:
+      "Machine Learning Engineer vs Application Engineer: Understanding the Difference Through a Robot",
+    excerpt:
+      "Learn the difference between Machine Learning Engineers and Application Engineers through a practical robot analogy, exploring their responsibilities, skill sets, workflows, and how they collaborate to build intelligent AI-powered products.",
+    date: "2026-06-30",
+    tags: ["Machine Learning", "AI", "Engineering", "Career", "Software Development"],
+    link: "https://axnsh.hashnode.dev/machine-learning-engineer-vs-application-engineer-understanding-the-difference-through-a-robot",
   },
 ];
