@@ -89,7 +89,7 @@ export default function HeroSection() {
           variant="outline"
           className="mb-4 px-4 py-1.5 border-primary/30 bg-primary/5 text-primary font-mono text-sm hover:bg-primary/10 transition-colors"
         >
-          Full Stack Web Developer
+          GenAI Full-Stack Web Developer
         </Badge>
 
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
