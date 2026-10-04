@@ -33,6 +33,7 @@ export default function HeroSection() {
   }, [])
 
   const skills = [
+    "GenAI",
     "Full-Stack",
     "React",
     "Next.js",
@@ -119,7 +120,7 @@ export default function HeroSection() {
         </h2>
 
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto md:mx-0 mb-6 leading-relaxed">
-          Full-stack web developer passionate about creating modern, scalable, and user-friendly web applications with React, Next.js, Node.js, and MongoDB.
+          GenAI-focused Full-Stack Developer building AI-powered products with LLMs, RAG, AI agents, and modern web technologies.
         </p>
 
         <div className="flex flex-wrap gap-2 justify-center md:justify-start mb-8">
@@ -129,6 +130,7 @@ export default function HeroSection() {
               variant="secondary"
               className={cn(
                 "px-3 py-1 text-xs font-medium rounded-full transition-all duration-300 hover:scale-105",
+                skill === "GenAI" && "bg-chart-3/20 text-chart-3 hover:bg-chart-3/30",
                 skill === "Full-Stack" && "bg-chart-4/20 text-chart-4 hover:bg-chart-4/30",
                 skill === "React" && "bg-blue-500/20 text-blue-500 hover:bg-blue-500/30",
                 skill === "Next.js" && "bg-chart-2/20 text-chart-2 hover:bg-chart-2/30",
@@ -155,7 +157,7 @@ export default function HeroSection() {
           </Button>
           <Button variant="outline" asChild className="hover:scale-105 transition-transform">
             <Link
-              href="/Resume_latest.pdf"
+              href="/Resume_GenAI.pdf"
               target="_blank"
               download
             >

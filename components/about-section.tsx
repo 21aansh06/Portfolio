@@ -22,7 +22,7 @@ export default function AboutSection() {
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
               I&apos;m <span className="font-semibold text-foreground">Aansh</span>, a passionate{" "}
-              <span className="font-semibold text-primary">Full-Stack Web Developer</span> with a
+              <span className="font-semibold text-primary">GenAI Full-Stack Web Developer</span> with a
               love for building scalable, modern, and user-friendly applications. 
               With a strong foundation in both frontend and backend, I specialize in creating 
               seamless digital experiences that solve real-world problems.
